@@ -25,6 +25,8 @@ window.addEventListener('load', async () => {
         drugsContainer.append(drugsEl);
     }
 });
+
+
 /* Get DOM Elements */
 
 /* State */
