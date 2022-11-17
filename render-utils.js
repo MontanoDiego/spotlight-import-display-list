@@ -1,8 +1,6 @@
 
 // renders
 
-import { fetchUsers } from "./fetch-utils.js";
-
 export function renderMovie(movie) {
     const div = document.createElement('div');
     div.classList.add('border');
