@@ -46,6 +46,10 @@ main {
     color: lightblue;
 }
 
+.users {
+    color: yellow;
+}
+
 .border {
     border: solid whitesmoke;
 }

@@ -1,6 +1,8 @@
 
 // renders
 
+import { fetchUsers } from "./fetch-utils.js";
+
 export function renderMovie(movie) {
     const div = document.createElement('div');
     div.classList.add('border');
@@ -71,12 +73,12 @@ export function renderUsers(users) {
     emailEl.textContent = users.email;
 
     const passwordEl = document.createElement('p');
-    passwordEl.textContent = users.email;
+    passwordEl.textContent = users.password;
 
     const macEl = document.createElement('a');
     macEl.textContent = users.mac;
 
-    const ipv4El = document.createElement('');
+    const ipv4El = document.createElement('h3');
     ipv4El.textContent = users.ipv4;
 
     div.append(usernameEl, emailEl, passwordEl, macEl, ipv4El);
