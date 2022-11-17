@@ -1,10 +1,11 @@
 /* Imports */
-import { fetchDrugs, fetchMovies } from './fetch-utils.js';
-import { renderDrugs, renderMovie } from './render-utils.js';
+import { fetchCars, fetchDrugs, fetchMovies } from './fetch-utils.js';
+import { renderCars, renderDrugs, renderMovie } from './render-utils.js';
 
 /* Get DOM Elements */
 const moviesContainer = document.getElementById('movie-list');
 const drugsContainer = document.getElementById('drugs-list');
+const carsContainer = document.getElementById('cars-list');
 
 /* Events */
 window.addEventListener('load', async () => {
@@ -26,7 +27,14 @@ window.addEventListener('load', async () => {
     }
 });
 
+window.addEventListener('load', async () => {
+    const cars = await fetchCars();
 
+    for (let car of cars) {
+        const carsEl = renderCars(car);
+        carsContainer.append(carsEl);
+    }
+});
 /* Get DOM Elements */
 
 /* State */

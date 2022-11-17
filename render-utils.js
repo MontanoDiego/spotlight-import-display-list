@@ -3,6 +3,7 @@
 
 export function renderMovie(movie) {
     const div = document.createElement('div');
+    div.classList.add('border');
 
     const h2 = document.createElement('h2');
     h2.textContent = movie.movie;
@@ -23,6 +24,7 @@ export function renderMovie(movie) {
 
 export function renderDrugs(drugs) {
     const div = document.createElement('div');
+    div.classList.add('border');
 
     const h2 = document.createElement('h2');
     h2.textContent = drugs.drug;
@@ -43,6 +45,7 @@ export function renderDrugs(drugs) {
 
 export function renderCars(cars) {
     const div = document.createElement('div');
+    div.classList.add('border');
 
     const h1 = document.createElement('h1');
     h1.textContent = cars.make;
