@@ -59,3 +59,26 @@ export function renderCars(cars) {
     div.append(h1, h2, h3);
     return div;
 }
+
+export function renderUsers(users) {
+    const div = document.createElement('div');
+    div.classList.add('border');
+
+    const usernameEl = document.createElement('h1');
+    usernameEl.textContent = users.username;
+
+    const emailEl = document.createElement('p');
+    emailEl.textContent = users.email;
+
+    const passwordEl = document.createElement('p');
+    passwordEl.textContent = users.email;
+
+    const macEl = document.createElement('a');
+    macEl.textContent = users.mac;
+
+    const ipv4El = document.createElement('');
+    ipv4El.textContent = users.ipv4;
+
+    div.append(usernameEl, emailEl, passwordEl, macEl, ipv4El);
+    return div;
+}
