@@ -6,6 +6,7 @@ import { renderCars, renderDrugs, renderMovie } from './render-utils.js';
 const moviesContainer = document.getElementById('movie-list');
 const drugsContainer = document.getElementById('drugs-list');
 const carsContainer = document.getElementById('cars-list');
+const usersContainer = document.getElementById('users-list');
 
 /* Events */
 window.addEventListener('load', async () => {

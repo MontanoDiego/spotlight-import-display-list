@@ -19,3 +19,8 @@ export async function fetchCars() {
     const response = await client.from('cars').select('*');
     return response.data;
 }
+
+export async function fetchUsers() {
+    const response = await client.from('users').select('*');
+    return response.data;
+}
