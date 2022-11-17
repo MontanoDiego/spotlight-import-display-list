@@ -1,10 +1,13 @@
 /* Imports */
+import { fetchMovies } from './fetch-utils.js';
 
 /* Get DOM Elements */
 
 /* State */
 
 /* Events */
+console.log(fetchMovies());
+
 
 /* Display Functions */
 
